@@ -6,3 +6,4 @@ pipeline:
       - apt-get install -y git build-essential gcc g++
       - git clone https://framagit.org/bnjbvr/kresus.git app
       - make install-node-dev-deps build lint
+
