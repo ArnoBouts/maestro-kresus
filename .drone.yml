@@ -8,3 +8,9 @@ pipeline:
       - cd app
       - make install-node-dev-deps build lint
 
+  publish:
+    image: plugins/docker
+    registry: no-cloud
+    repo: no-cloud.fr/maestro/kresus
+    tag: latest
+    file: Dockerfile
