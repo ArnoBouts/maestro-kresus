@@ -4,8 +4,8 @@ pipeline:
     commands:
       - apt-get update
       - apt-get install -y git build-essential gcc g++
-      - git clone https://framagit.org/bnjbvr/kresus.git app
-      - cd app
+      - git clone https://framagit.org/bnjbvr/kresus.git kresus
+      - mv kresus/* .
       - make install-node-dev-deps build lint
 
   publish:
@@ -13,4 +13,4 @@ pipeline:
     registry: no-cloud
     repo: no-cloud.fr/maestro/kresus
     tag: latest
-    file: app/Dockerfile
+    file: Dockerfile
