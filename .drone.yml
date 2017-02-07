@@ -13,4 +13,4 @@ pipeline:
     registry: no-cloud
     repo: no-cloud.fr/maestro/kresus
     tag: latest
-    file: Dockerfile
+    file: app/Dockerfile
